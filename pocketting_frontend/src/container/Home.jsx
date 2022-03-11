@@ -8,6 +8,7 @@ import Pins from './Pins';
 import { Sidebar, UserProfile } from '../components';
 import { client } from '../client';
 import logo from '../assets/logo.png';
+import logo2 from '../assets/Pocketting.png';
 import { fetchUser } from '../utils/fetchUser';
 
 const Home = () => {
@@ -41,7 +42,7 @@ const Home = () => {
         <div className="p-2 w-full flex flex-row justify-between items-center shadow-md">
           <HiMenu fontSize={40} className="cursor-pointer" onClick={() => setToggleSidebar(true)}/>
           <Link to="/">
-            <img src={logo} alt="logo" className="w-28" />
+            <img src={logo2} alt="logo" className="w-28" />
           </Link>
           <Link to={`user-profile/${user?._id}`}>
             <img src={user?.image} alt="logo" className="w-28" />
