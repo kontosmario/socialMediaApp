@@ -98,6 +98,7 @@ const UserProfile = () => {
                   )}
                   onLogoutSuccess={logout}
                   cookiePolicy="single_host_origin"
+                  jsSrc="https://apis.google.com/js/api.js"
                 />
               )}
             </div>
